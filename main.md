@@ -53,15 +53,15 @@
 - After spending some time with it, I soon realised that in order to create the animation, I’d have to squash and stretch Grub’s face, something I was hesitant to do as I believed it may hurt the readability and silhouette of the character. However, after looking at squash and stretch in 2D platformers such as Super Mario Bros Wonder, I quickly realised that the effect didn’t take away from the character’s instant readability, so I decided to revisit it and iterate with a fresh mindset, which got me to make this:
 
 
-![Early Grub Design 2](images/grubEarlyV2.png)
+![Early Grub Design 2](images/grubEarlyV2.gif)
 
 - After taking some time and comparing the two versions, I could finally tell that I was making steady improvement with my assets and was beginning to reach a place I was pretty happy with, although I knew I was far from done. I decided now to begin working on an overworld tileset. While originally we had planned for the overworld to deviate from the regular pixel at style and instead go for a 3D low-poly style, I quickly realised this was slightly out of my scope of capabilities for this project, so the idea had to unfortunately be shelved. Taking heavy inspiration from Deltarune and Super Mario Bros World, I began to work on an underground-themed tileset, including some swappable tiles that feature decorations, I landed on this design:
 
-- ![Early Tileset Design 2](images/tilsetV1.png)
+![Early Tileset Design 2](images/tilsetV1.png)
 
 - I then began work on the item sheet as well. Taking basic inspiration from Spelunky, I added some base items such as boxes and vases. A suggestion for a collectible from our coders was a small, baby grub, which the player would have to collect to beat the stage. With all of this in mind, I created these objects:
 
-- ![Early Item Design 2](images/itemsV1.png)
+![Early Item Design 2](images/itemsV1.png)
 
 ## 4. Finalising / Iteration
 
