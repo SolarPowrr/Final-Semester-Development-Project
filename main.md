@@ -53,7 +53,7 @@
 - After spending some time with it, I soon realised that in order to create the animation, I’d have to squash and stretch Grub’s face, something I was hesitant to do as I believed it may hurt the readability and silhouette of the character. However, after looking at squash and stretch in 2D platformers such as Super Mario Bros Wonder, I quickly realised that the effect didn’t take away from the character’s instant readability, so I decided to revisit it and iterate with a fresh mindset, which got me to make this:
 
 
-![Early Grub Design 2](images/grubEarlyV2)
+![Early Grub Design 2](images/grubEarlyV2.png)
 
 - After taking some time and comparing the two versions, I could finally tell that I was making steady improvement with my assets and was beginning to reach a place I was pretty happy with, although I knew I was far from done. I decided now to begin working on an overworld tileset. While originally we had planned for the overworld to deviate from the regular pixel at style and instead go for a 3D low-poly style, I quickly realised this was slightly out of my scope of capabilities for this project, so the idea had to unfortunately be shelved. Taking heavy inspiration from Deltarune and Super Mario Bros World, I began to work on an underground-themed tileset, including some swappable tiles that feature decorations, I landed on this design:
 
