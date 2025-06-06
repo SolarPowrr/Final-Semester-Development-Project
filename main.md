@@ -126,8 +126,9 @@
 
 - The customer characters were also a big part of giving the game personality. Originally, when drawing the UI of the game, I had made the customer a simple black cat, just so that I could quickly put the idea onto paper and show it off. However, we quickly fell in love with idea of more cartoony animals with anthropomorphic traits, so that their emotions could quickly and easily be shown off with simple expressions, similar to how characters in Animal Crossing would react in very readable ways.
 
-![Cat and Dog Assets](images/ShopkeeperCustomers1.png)
-![Cat and Dog Assets](images/ShopkeeperCustomers2.png)
+![Cat Assets](images/ShopkeeperCustomers1.png)
+![Dog Assets](images/ShopkeeperCustomers2.png)
+![Squirrel Assets (shamefully not finalised](images/ShopkeeperCustomers3.png)
 
 - These characters were mocked up in pixel form and placed in early prototypes so we could test spacing and animation handling. Seeing them in context helped me gauge whether their designs worked on small screens and if they stood out against the backdrop of the shop, as well as if their emotions were easy to read. We quickly realised that, while the facial expressions were cute, the characters would be much easier to read if they gave some kind of visual effect along with their emotion, such as an exclamation mark for being angry, or a heart if they were happy.
 
