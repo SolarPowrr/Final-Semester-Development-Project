@@ -15,10 +15,10 @@
 
 - Early in the project, our team established a rough timeline broken down into phases: concept development, prototyping, production, iteration, and final implementation. Each stage had specific goals and outputs, ensuring we kept the momentum going throughout. 
 
-###- Research
-###- Concept Stage
-###- Production
-###- Finalising
+- Research
+- Concept Sketches
+- Production
+- Finalising
 
 - With experience on previous projects, I knew that I needed to take my time, and iterate on my art, as opposed to rushing straight to production and finalising too quickly. Especially with another artist on the team, this forced us to make sure our core idea was strong enough to support itself.  
 
