@@ -86,3 +86,78 @@
 
 
 
+# Shopkeeper Roguelike - Group Mobile Project
+
+## Introduction 
+
+
+- For this project, my team was tasked with a very open-ended goal; create a game designed for a mobile phone/touchscreen user interface. While this sounds like a simple task on paper, user interface is often the most neglected part of game design, and creating something for a mobile phone increases this challenge by a significant amount. There is also a careful consideration to be taken into account about hardware; While high-end and low-end computers are very clearly defined within the PC gaming world, mobile hardware is often far less important, and are not usually intended for any kind of graphical capability.
+- With all of this in mind, we knew we needed to create a game that was a lot more methodical than graphical. Rather than delivering amazing scenes and impressively curated art for our game as the hook, we knew instead the concept had to be fun, so fun that you could take it out of your pocket and immediately want to start playing. It also needed to have replayability, and needed a certain ease of “pickup and play” factored into it. With all of this laid out in front of our group, we decided on making some kind of 2D roguelike with pixel graphics. Many of our group members were already very interested in the roguelike genre, and for this project, it seemed like a perfect avenue. 
+- Roguelikes, with their inherent randomness in terms of items, rooms, enemies, challenges, and other elements, create a perfect game that has “quick runs” - something you can pick up, spend 10 minutes on, and can continue another time. We were heavily inspired by games like Peglin and Balatro, and opposed to other roguelikes like The Binding of Isaac or Enter the Gungeon. The former favoured a lot more strategic thinking, and presented very few “mechanical demands" - the challenge came more from knowing what to do, and not how to do it.
+- With this project, I wanted it to be my first real dive into creating a roguelike with scalable elements. In theory, roguelikes should be quite easy to make, given that your stat/attribute system is robust enough to handle a large amount of basic items being stat increases or decreases.
+
+---
+
+## 1. Time Planning
+
+- Because of how quickly our team banded together to spend a night fleshing out the concept of our idea, we were ambitious to start development quickly. We decided to divide the work flow between the four of us so that we had one artist, one gameplay coder, one stat coder, and one person to unify the two sides and incorporate them both, which was my job. On top of that, my team let me know that I was free to submit some art for the project, such as character design or assets, which helped give me more to do at the beginning of the project.
+
+- From the outset, we mapped out the development timeline across a shared digital calendar, breaking the project into phases: concept planning, system prototyping, asset production, implementation, testing, and polish. These were ensured via frequent check-ins and milestones with a private Discord server, with channels to organise the different elements of our game in order to keep everything organised.
+
+- Deadlines were crucial for momentum—because we had a lot of passion for the game near the very beginning, it was important for us not to rush lots of work out in the first few weeks, and then fall behind because we’d overworked ourselves. Reaching over a checkpoint is obviously good news, but keeping our objectives reasonable and not causing too much pressure on ourselves to push work as quickly as possible in the beginning would help us keep both pace and interest. Scheduling key features like stat-tracking systems or customer generation early in the process allowed the gameplay loop to solidify while still giving enough time to create a sense of polish. 
+
+---
+
+## 2. Demonstration of Research
+
+- Before starting the asset production and coding phase, I took the time to study similar mobile roguelikes and management games to understand how they tackled both randomness and accessibility. Our biggest mechanical inspiration came from games like Peglin and Balatro, both of which rely heavily on turn-based decisions in environments that don’t require much reaction-based inputs. These games stand out by creating an engaging loop that doesn’t rely on traditional combat reflexes, but rather smart decision-making and experimentation.
+
+- Visually, we opted for pixel art because of its clarity on small screens, minimal performance demands, and timeless appeal. From a UI perspective, I looked into mobile-friendly layouts from games like Miracle Merchant and Downwell—titles known for elegant simplicity. These influenced our decisions on where to place important information, stats, and interaction buttons in intuitive places that don’t clog the screen space.
+
+![UI Concept Art](images/ShopkeeperKerkelConceptArt.png)
+
+- We wanted to add microgames, inspired by titles like Mindwave and WarioWare. These microgames were designed to be a “second channel” of quick-paced yet short interactions that would have to be kept in balance with the customers. Our minigames became chances to boost stats that affect shopkeeping in the long-term (e.g., increasing customer patience or raising prices), rather than gaining money directly. This asymmetry in reward systems was a key idea I brought to the table, and players would by default need to keep both in balance, but could later specialise into primarily a single mode of playing, given they had the right items to allow them to.
+
+- Early concepts for the minigames were first verbally talked with the team, inspired by short sections of other games we all personally liked. For example, an idea of an item-matching microgame came from the gameplay loop of Unpacking, and another microgame being the player having to quickly memorise information from a list, and recall a specific entry, from Papers Please. Most noticeably, these loops all come from games with a shorter runtime, and a gameplay loop that’s considerably shorter than most traditional games.
+
+---
+
+## 3. Production of Assets
+
+- The customer characters were also a big part of giving the game personality. Originally, when drawing the UI of the game, I had made the customer a simple black cat, just so that I could quickly put the idea onto paper and show it off. However, we quickly fell in love with idea of more cartoony animals with anthropomorphic traits, so that their emotions could quickly and easily be shown off with simple expressions, similar to how characters in Animal Crossing would react in very readable ways.
+
+![Cat and Dog Assets](images/ShopkeeperCustomers1.png)
+![Cat and Dog Assets](images/ShopkeeperCustomers2.png)
+
+- These characters were mocked up in pixel form and placed in early prototypes so we could test spacing and animation handling. Seeing them in context helped me gauge whether their designs worked on small screens and if they stood out against the backdrop of the shop, as well as if their emotions were easy to read. We quickly realised that, while the facial expressions were cute, the characters would be much easier to read if they gave some kind of visual effect along with their emotion, such as an exclamation mark for being angry, or a heart if they were happy.
+
+## 4. Finalising / Iteration
+
+- As our deadline approached, I focused primarily on iterating the minigames. I ran a small test session with a few other students who weren’t part of the team to see how clearly the games communicated their goals. This was crucial because many users were confused during early tests about how stat boosts affected the core shop gameplay.
+
+- To solve this, I added small UI icons that would flash above the player’s counter during customer service if a stat was currently being affected by a buff from a minigame. For example, a lightning bolt icon would indicate faster serving speed. This simple tweak made the connection between the minigames and shop performance much more obvious, and it was a big quality-of-life improvement.
+
+- One of the most satisfying parts of this phase was seeing all the different elements—stat tracking, minigames, customer sprites, and upgrades—working together in a unified loop. These tweaks weren’t flashy, but we knew it would take large amounts of user feedback and playtesting in order to make small adjustments to the numbers.
+
+---
+
+## 5. Implementation
+
+- The minigames each existed in their own self-contained scenes, so implementing them was a matter of importing the sprites, assigning animations where needed, and making sure all clickable elements worked on touchscreen. Unity’s event system was sometimes a little clunky with tap-and-drag mechanics, so the hitboxes often had to be a little more generous, something we found out quickly was true with many of the elements when testing on a phone.
+
+- For the customer characters, I used Unity’s Animator to set up simple idle and “interaction” states—just enough to give each animal some movement and presence. I also worked with our dialogue manager system to ensure their speech was readable and varied. Dialogue was randomized per customer, so no two visits felt the same, even if the requests were mechanically identical.
+
+- Once everything was in place, it was deeply satisfying to play through a full loop: start the day, sell to customers, play a minigame, get buffs, repeat. Watching other testers intuitively engage with the system without needing much instruction told me we had struck the right balance between depth and simplicity.
+
+---
+
+## 6. Conclusion
+
+- Working on the Shopkeeper Roguelike project taught me a lot about mobile design and gameplay pacing. By focusing on short bursts of interaction, we were able to make a game that was easy to pick up but rewarding over time. More than that, I got to explore how game mechanics and visuals support each other—the way a sarcastic dog customer adds as much personality as a stat screen, or how a short minigame can completely change how you approach a shop interaction.
+
+- Most of all, this project showed me how cohesive a game can feel when everyone on a team is passionate about different parts of the process. Whether it was the stat systems, the UI layout, or the silly customer dialogue, every piece worked together because we took the time to communicate and share ideas openly. I’m walking away with more experience, more confidence in my design skills, and—most importantly—a burning desire to keep making weird little games with personality.
+
+
+
+
+
